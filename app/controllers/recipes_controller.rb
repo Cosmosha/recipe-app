@@ -1,11 +1,11 @@
 class RecipesController < ApplicationController
   def my_recipes
     @user = current_user
-    @recipes = @user.recipes
+    @recipes = @user.recipes.includes(:recipe_foods, :foods)
   end
 
   def show
-    @recipe = Recipe.find_by(id: params[:id])
+    @recipe = Recipe.includes(recipe_foods: :food).find_by(id: params[:id])
     render file: "#{Rails.root}/public/404.html", status: 404 unless @recipe
     @ingredients = @recipe.recipe_foods.includes(:food)
   end

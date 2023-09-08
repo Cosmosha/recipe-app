@@ -1,8 +1,8 @@
 class RecipeFoodsController < ApplicationController
   def new
     @current_user = current_user
-    @recipe = Recipe.find_by_id(params[:recipe_id])
-    @available_foods = current_user.foods.reject { |f| @recipe.foods.include?(f) }
+    @recipe = Recipe.includes(foods: :measurement_unit).find_by_id(params[:recipe_id])
+    @available_foods = current_user.foods.includes(:measurement_unit).where.not(id: @recipe.foods.pluck(:id))
     @recipe_food = RecipeFood.new
     @recipe_food.recipe = @recipe
   end
