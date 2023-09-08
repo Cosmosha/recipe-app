@@ -1,0 +1,28 @@
+nav {
+  margin-bottom: 5rem;
+}
+
+.nav-button {
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #3498db;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.signout {
+  background-color: #be254b;
+}
+
+.signout:hover {
+  background-color: #791010;
+  color: #ffffff;
+}

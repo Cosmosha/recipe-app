@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-  <nav class="mx-4 bg-gray-700 px-4 py-6 ">
+  <nav class="mx-4 bg-gray-700 px-4 py-6">
     <div class="container mx-auto flex justify-between items-center">
       <div class="text-white cursor-none text-2xl font-semibold">
         Ultimate Recipe Assistant
@@ -14,35 +14,3 @@
     </div>
   </nav>
 <% end %>
-
-<style>
-  /* Inline styles for .nav-button class */
-
-  nav{
-    margin-bottom:5rem;
-  }
-  .nav-button {
-    color: white;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    background-color: #3498db;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  .nav-button:hover {
-    background-color: #2980b9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .signout{
-    background-color: #BE254B;
-  }
-
-  .signout:hover{
-    background-color: #791010;
-    color: #FFFFFF;
-  }
-</style>
