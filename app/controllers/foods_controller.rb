@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
   def index
     @current_user = current_user
-    @foods = current_user.foods
+    @foods = current_user.foods.includes(:measurement_unit)
   end
 
   def new
