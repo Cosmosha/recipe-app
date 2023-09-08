@@ -1,6 +1,6 @@
 <!-- PROJECT DESCRIPTION -->
 
-# <a name="about-project"> Ultimate Recipe Assistant </a>
+# <a name="about-project"> Recipe App </a>
 
 Recipe App: A delicious project built with Ruby on Rails and Tailwind CSS, serving up mouthwatering recipes for food enthusiasts. 🍽️👩‍🍳 #Cooking #WebDev"
 
