@@ -4,7 +4,7 @@ class RecipeFoodsController < ApplicationController
     @recipe = Recipe.includes(foods: :measurement_unit).find_by_id(params[:recipe_id])
     @available_foods = current_user.foods.includes(:measurement_unit).where.not(id: @recipe.foods.pluck(:id))
     @recipe_food = RecipeFood.new
-    @recipe_food.recipe = @recipe
+    @recipe_food.recipe = @recipe 
   end
 
   def create
