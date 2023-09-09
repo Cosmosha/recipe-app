@@ -7,10 +7,10 @@
       <div class="space-x-4 flex">
         <%= link_to "My Recipes", my_recipes_path, class: "nav-button" %>
         <%= link_to "Public Recipes", public_recipes_path, class: "nav-button" %>
-        <!-- Add Shopping List and Foods buttons here after creating them -->
       </div>
       <%= link_to "Add Recipe", new_recipe_path, id: "new-recipe", class: "nav-button" %>
+      <%= link_to "Add Food", foods_path, id: "new-recipe", class: "nav-button" %>
       <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-button signout" %>
     </div>
   </nav>
-<% end %>
+<% end %> 
