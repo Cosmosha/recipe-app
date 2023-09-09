@@ -1,7 +1,7 @@
 class RecipesController < ApplicationController
   def my_recipes
     @user = current_user
-    @recipes = @user.recipes.includes(:recipe_foods, :foods) 
+    @recipes = @user.recipes.includes(:recipe_foods, :foods)
   end
 
   def show

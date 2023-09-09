@@ -5,7 +5,7 @@ class FoodsController < ApplicationController
   end
 
   def new
-    @current_user = current_user 
+    @current_user = current_user
     @food = Food.new
     @measurement_units = %w[grams kilograms liters milliliters pieces cups teaspoons tablespoons]
   end
